@@ -1,0 +1,32 @@
+<body>
+  <div class="row justify-content-evenly">
+    <div class="col-md-4">
+      <h1 class="text-center bg-light" id="titulo">Informacion</h1>
+      <div class="card text-center">
+        <img *ngIf="isVisible" src="assets/Gojo.jpg" class="card-img-top" alt="No hay imagen">
+        <button (click)="showImg()">Imagen que me representa </button>
+        <button (click)="hideImg()">Esconder</button>
+      <div class="card-body">
+        <h4 class="card-title">Bryan Lopez - Programador</h4>
+        <p class="card-text">Correo electronico: brylop15&#64;gmail.com </p>
+      </div>
+      <div class="card-footer text-muted">
+        All Copyrights reserved ©
+      </div>
+     </div>
+    </div>
+    <div class="col-md-4">
+      <h1 class="text-center bg-light" id="titulo">Datos relacionados</h1>
+      <div class="card text-center">
+      <div class="card-body">
+        <h4 class="card-title">Pagina de chistes de Chuck Norris, entrar bajo su propio riesgo</h4>
+        <p class="card-text">Tecnologias utlizadas para la realizacion del proyecto: </p>
+        <p *ngFor="let language of languages" class="card-text"> {{ language }} </p>
+      </div>
+      <div class="card-footer text-muted">
+        All Copyrights reserved ©
+      </div>
+    </div> 
+    </div>
+  </div>
+</body> 

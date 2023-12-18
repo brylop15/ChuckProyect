@@ -1,0 +1,17 @@
+<body>
+    <div class="container">
+        <div class="row align-items-center">
+          <div class="card">
+              <h2 class="card-title text-center">Haz Click en el boton para obtener un nuevo chiste de Chuck</h2>
+              <h5 class="card-title text-center">*Chuck lo aprueba*</h5>
+              <img src="assets/chuck-norris-approves.jpg" class="card-img-top" alt="Chuck no quiere aparecer"/>
+              <div class="card-body">
+              <h4 class="text-center">{{ chiste }}</h4>
+              <div class="text-center">
+              <button class="btn btn-primary" (click)="getChiste()" data-mdb-ripple-init>Nuevo chiste</button>
+              </div>
+              </div>
+          </div>
+        </div>
+      </div>
+</body>
